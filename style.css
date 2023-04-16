@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.biggerNumber {
+  color: rgb(6, 242, 6);
+}
+
+.smallerNumber {
+  color: rgb(235, 30, 30);
+}
+
+.tieNumber {
+  color: rgb(105, 97, 97);
+}
+
+.defaultNumber {
+  color: black;
+}
+
+body {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 0, 122, 0.1),
+      rgba(255, 0, 122, 0.1)
+    ),
+    radial-gradient(
+      50.98% 50.98% at 50% 49.02%,
+      #a6aeec 0%,
+      rgba(255, 204, 72, 0.791667) 20.83%,
+      rgba(169, 228, 182, 0.625) 37.5%,
+      rgba(147, 170, 228, 0.536458) 54.69%,
+      rgba(224, 149, 223, 0.411458) 69.79%,
+      rgba(255, 10, 24, 0.260417) 83.85%,
+      rgba(243, 133, 3, 0) 100%
+    );
+
+  background-position: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.disabledBackground {
+  background: linear-gradient(
+      0deg,
+      rgba(43, 43, 43, 0.1),
+      rgba(43, 43, 43, 0.1)
+    ),
+    linear-gradient(
+      180deg,
+      #888888 -1.95%,
+      rgba(168, 163, 150, 0.791667) 19.29%,
+      rgba(180, 180, 180, 0.625) 36.28%,
+      rgba(162, 162, 162, 0.536458) 53.8%,
+      rgba(149, 149, 149, 0.411458) 69.2%,
+      rgba(31, 31, 31, 0.260417) 83.54%,
+      rgba(0, 0, 0, 0) 100%
+    );
+}

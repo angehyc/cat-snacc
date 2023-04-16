@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="app.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="w-full flex justify-center pt-[40px]">
+      <img class="w-[757px]" src="public/wordart.png" alt="some cute title" />
+    </div>
+
+    <div class="bg-[#34F3FF] py-3 w-full flex justify-center">
+      <p class="font-comic-sans text-[40px] font-bold">I want to give out</p>
+      <select id="snackCounter" name="number" class="mx-4 px-5">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+      <p class="font-comic-sans text-[40px] font-bold">snaccs today</p>
+    </div>
+
+    <section
+      id="catAndCounters"
+      class="flex justify-center gap-[300px] mt-[60px]"
+    >
+      <div id="cat1Div" class="flex flex-col items-center">
+        <img src="public/cat1.png" alt="a white cat" id="cat1" />
+        <h3
+          id="counter1"
+          class="font-times-new-roman font-bold text-[50px] mt-5"
+        >
+          0
+        </h3>
+        <button
+          id="cat1Button"
+          class="bg-[#24FF00] mt-2 font-times-new-roman italic text-[40px] border-[5px] border-solid border-[#FF2828] leading-8 disabled:bg-slate-500 disabled:border-slate-700"
+        >
+          +1 snacc
+        </button>
+      </div>
+
+      <div id="cat2Div" class="flex flex-col items-center">
+        <img src="public/cat2.png" alt="a fluffy cat" id="cat2" />
+        <h3
+          id="counter2"
+          class="font-times-new-roman font-bold text-[50px] mt-5"
+        >
+          0
+        </h3>
+        <button
+          id="cat2Button"
+          class="bg-[#24FF00] mt-2 font-times-new-roman italic text-[40px] border-[5px] border-solid border-[#FF2828] leading-8 disabled:bg-slate-500 disabled:border-slate-700"
+        >
+          +1 snacc
+        </button>
+      </div>
+    </section>
+
+    <div class="w-full flex justify-center mt-16">
+      <button
+        id="resetButton"
+        class="text-white bg-[#E836F8] mt-2 font-times-new-roman italic text-[24px] border-[3px] border-solid border-[#0500FF] leading-8"
+      >
+        reset button
+      </button>
+    </div>
+
+    <div
+      class="flex items-center gap-2 font-comic-sans absolute bottom-3 left-1/2 -translate-x-1/2"
+    >
+      <img src="public/cat3.png" alt="" />
+      <p>made with smat in mind (the name of my future cat)</p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
